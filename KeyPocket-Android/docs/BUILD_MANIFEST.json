@@ -1,0 +1,14 @@
+{
+  "apk": "KeyPocket-Android-1.0.apk",
+  "bytes": 78484,
+  "sha256": "32533df15310278a57d3d436687d0c70fb6961b14bbc64bce94b13fe73c4c86e",
+  "package": "local.keypocket.android",
+  "version": "1.0",
+  "minSdk": 26,
+  "targetSdk": 36,
+  "verification": {
+    "coreAssertions": 63,
+    "android15RuntimeAssertions": 13,
+    "physicalDoorTested": false
+  }
+}

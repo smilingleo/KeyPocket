@@ -1,0 +1,7 @@
+KeyPocket is an independent compatibility client for users who already have a Keyboot/钥匙宝 account and authorized access-control keys. It does not create access rights or grant access to unapproved doors.
+
+Demo mode: On the login screen, select “查看功能演示”. This visible demo entry uses clearly marked fictional keys and allows browsing favorite doors, local naming/order, Bluetooth/sound settings, and the Shortcuts entry. Tapping a demo open button only displays explanatory text. Demo mode never requests SMS, contacts the authentication service, scans Bluetooth, transmits an opening command, or plays authorization audio. Exit using “退出演示”.
+
+Real functionality requires an existing authorized account and compatible access-control hardware. Each real open operation refreshes authorization. Credentials are stored in iOS Keychain. Sound output uses the built-in speaker and does not record audio. A completed transmission is reported as “sent”, not as proof that a physical door unlocked.
+
+Pending before final submission: confirm the available review path for real authentication/hardware, provide a physical-device video showing interaction with compatible hardware where required, and confirm any necessary authorization for access to the third-party service. No claim of vendor endorsement or completed physical-hardware review testing is made.

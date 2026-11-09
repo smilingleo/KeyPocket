@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+000000000000000000001001 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared/WatchBridge.swift; sourceTree = SOURCE_ROOT; };
+000000000000000000001002 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPocketWatch/WatchApp.swift; sourceTree = SOURCE_ROOT; };
+000000000000000000001003 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPocketWatch/WatchSoundClient.swift; sourceTree = SOURCE_ROOT; };
+000000000000000000001004 = { isa = PBXFileReference; explicitFileType = wrapper.application; path = KeyPocketWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+00000000000000000000100A = { isa = PBXBuildFile; fileRef = 000000000000000000001001; };
+00000000000000000000100B = { isa = PBXBuildFile; fileRef = 000000000000000000001001; };
+00000000000000000000100C = { isa = PBXBuildFile; fileRef = 000000000000000000001002; };
+00000000000000000000100D = { isa = PBXBuildFile; fileRef = 000000000000000000001003; };
+00000000000000000000100E = { isa = PBXBuildFile; fileRef = 000000000000000000000066; };
+00000000000000000000100F = { isa = PBXBuildFile; fileRef = 000000000000000000000067; };
+000000000000000000001010 = { isa = PBXBuildFile; fileRef = 00000000000000000000006B; };
+000000000000000000001011 = { isa = PBXBuildFile; productRef = 00000000000000000000101E; };
+000000000000000000001012 = { isa = PBXBuildFile; fileRef = 000000000000000000001004; settings = { ATTRIBUTES = (RemoveHeadersOnCopy,); }; };
+000000000000000000001014 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (00000000000000000000100B, 00000000000000000000100C, 00000000000000000000100D, 00000000000000000000100E, 00000000000000000000100F,); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000001015 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (000000000000000000001011,); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000001016 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000001010, 000000000000000000001029,); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000001017 = { isa = PBXCopyFilesBuildPhase; buildActionMask = 2147483647; dstPath = "$(CONTENTS_FOLDER_PATH)/Watch"; dstSubfolderSpec = 16; files = (000000000000000000001012,); name = "Embed Watch Content"; runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000001018 = { isa = PBXContainerItemProxy; containerPortal = 000000000000000000000001; proxyType = 1; remoteGlobalIDString = 00000000000000000000101D; remoteInfo = KeyPocketWatch; };
+000000000000000000001019 = { isa = PBXTargetDependency; target = 00000000000000000000101D; targetProxy = 000000000000000000001018; };
+00000000000000000000101A = { isa = XCConfigurationList; buildConfigurations = (00000000000000000000101B, 00000000000000000000101C,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+00000000000000000000101B = { isa = XCBuildConfiguration; name = Debug; buildSettings = {
+ SDKROOT = watchos; SUPPORTED_PLATFORMS = "watchos watchsimulator"; WATCHOS_DEPLOYMENT_TARGET = 11.0;
+ TARGETED_DEVICE_FAMILY = 4; SWIFT_VERSION = 5.0; CODE_SIGN_STYLE = Automatic; DEVELOPMENT_TEAM = TLAMM3823Y;
+ PRODUCT_BUNDLE_IDENTIFIER = net.smilingleo.KeyPocket.watchkitapp; PRODUCT_NAME = "$(TARGET_NAME)";
+ GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = KeyPocketWatch/Info.plist; SKIP_INSTALL = YES;
+ CURRENT_PROJECT_VERSION = 6; MARKETING_VERSION = 1.4; ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+ SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG";
+ }; };
+00000000000000000000101C = { isa = XCBuildConfiguration; name = Release; buildSettings = {
+ SDKROOT = watchos; SUPPORTED_PLATFORMS = "watchos watchsimulator"; WATCHOS_DEPLOYMENT_TARGET = 11.0;
+ TARGETED_DEVICE_FAMILY = 4; SWIFT_VERSION = 5.0; CODE_SIGN_STYLE = Automatic; DEVELOPMENT_TEAM = TLAMM3823Y;
+ PRODUCT_BUNDLE_IDENTIFIER = net.smilingleo.KeyPocket.watchkitapp; PRODUCT_NAME = "$(TARGET_NAME)";
+ GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = KeyPocketWatch/Info.plist; SKIP_INSTALL = YES;
+ CURRENT_PROJECT_VERSION = 6; MARKETING_VERSION = 1.4; ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+ SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+ }; };
+00000000000000000000101D = { isa = PBXNativeTarget; buildConfigurationList = 00000000000000000000101A; buildPhases = (000000000000000000001014, 000000000000000000001015, 000000000000000000001016,); buildRules = (); dependencies = ();
+ name = KeyPocketWatch; productName = KeyPocketWatch; productReference = 000000000000000000001004; productType = "com.apple.product-type.application"; packageProductDependencies = (00000000000000000000101E,); };
+00000000000000000000101E = { isa = XCSwiftPackageProductDependency; package = 000000000000000000000010; productName = KeyPocketCore; };
+000000000000000000001028 = { isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = KeyPocketWatch/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+000000000000000000001029 = { isa = PBXBuildFile; fileRef = 000000000000000000001028; };
+
+/* Begin PBXBuildFile section */
+		0000000000000000000000C8 /* KeyPocketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000064 /* KeyPocketApp.swift */; };
+		0000000000000000000000C9 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000065 /* AppModel.swift */; };
+		0000000000000000000000CA /* BluetoothDoorClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000066 /* BluetoothDoorClient.swift */; };
+		0000000000000000000000CB /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000067 /* Keychain.swift */; };
+		0000000000000000000000D2 /* KeyPocketCore in Frameworks */ = {isa = PBXBuildFile; productRef = 000000000000000000000011 /* KeyPocketCore */; };
+		0000000000000000000000CC /* SoundDoorClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000068 /* SoundDoorClient.swift */; };
+0000000000000000000000CD = {isa = PBXBuildFile; fileRef = 000000000000000000000069; };
+0000000000000000000000CE = {isa = PBXBuildFile; fileRef = 00000000000000000000006A; };
+0000000000000000000000D0 = {isa = PBXBuildFile; fileRef = 00000000000000000000006B; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000006 /* KeyPocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyPocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000064 /* KeyPocketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPocketApp.swift; sourceTree = "<group>"; };
+		000000000000000000000065 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		000000000000000000000066 /* BluetoothDoorClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDoorClient.swift; sourceTree = "<group>"; };
+		000000000000000000000067 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		00000000000000000000006E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000068 /* SoundDoorClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundDoorClient.swift; sourceTree = "<group>"; };
+000000000000000000000069 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorShortcuts.swift; sourceTree = "<group>"; };
+00000000000000000000006A = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+00000000000000000000006B = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000000000000000000D2 /* KeyPocketCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000001001, 000000000000000000001002, 000000000000000000001003, 000000000000000000001028,
+000000000000000000000003 /* KeyPocket */,
+				000000000000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* KeyPocket */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000069,
+00000000000000000000006A,
+00000000000000000000006B,
+000000000000000000000064 /* KeyPocketApp.swift */,
+				000000000000000000000065 /* AppModel.swift */,
+				000000000000000000000066 /* BluetoothDoorClient.swift */,
+				000000000000000000000067 /* Keychain.swift */,
+				000000000000000000000068 /* SoundDoorClient.swift */,
+				00000000000000000000006E /* Info.plist */,
+			);
+			path = KeyPocket;
+			sourceTree = "<group>";
+		};
+		000000000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000001004,
+000000000000000000000006 /* KeyPocket.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000005 /* KeyPocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00000000000000000000000B /* Build configuration list for PBXNativeTarget "KeyPocket" */;
+			buildPhases = (
+				000000000000000000000007 /* Sources */,
+				000000000000000000000008 /* Frameworks */,
+				000000000000000000000009 /* Resources */,
+000000000000000000001017,
+			);
+			buildRules = (
+			);
+			dependencies = (000000000000000000001019,);
+			name = KeyPocket;
+			packageProductDependencies = (
+				000000000000000000000011 /* KeyPocketCore */,
+			);
+			productName = KeyPocket;
+			productReference = 000000000000000000000006 /* KeyPocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 2720;
+				TargetAttributes = {
+					000000000000000000000005 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 00000000000000000000000A /* Build configuration list for PBXProject "KeyPocket" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				"zh-Hans",
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000002;
+			packageReferences = (
+				000000000000000000000010 /* XCLocalSwiftPackageReference "Core" */,
+			);
+			productRefGroup = 000000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+00000000000000000000101D,
+				000000000000000000000005 /* KeyPocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+0000000000000000000000CE,
+0000000000000000000000D0,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+00000000000000000000100A,
+				0000000000000000000000CD,
+0000000000000000000000C8 /* KeyPocketApp.swift in Sources */,
+				0000000000000000000000C9 /* AppModel.swift in Sources */,
+				0000000000000000000000CA /* BluetoothDoorClient.swift in Sources */,
+				0000000000000000000000CB /* Keychain.swift in Sources */,
+				0000000000000000000000CC /* SoundDoorClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		00000000000000000000000C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEVELOPMENT_TEAM = TLAMM3823Y;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		00000000000000000000000D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEVELOPMENT_TEAM = TLAMM3823Y;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		00000000000000000000000E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KeyPocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = net.smilingleo.KeyPocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		00000000000000000000000F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KeyPocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = net.smilingleo.KeyPocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00000000000000000000000A /* Build configuration list for PBXProject "KeyPocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000000C /* Debug */,
+				00000000000000000000000D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00000000000000000000000B /* Build configuration list for PBXNativeTarget "KeyPocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000000E /* Debug */,
+				00000000000000000000000F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		000000000000000000000010 /* XCLocalSwiftPackageReference "Core" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Core;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		000000000000000000000011 /* KeyPocketCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 000000000000000000000010 /* XCLocalSwiftPackageReference "Core" */;
+			productName = KeyPocketCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}

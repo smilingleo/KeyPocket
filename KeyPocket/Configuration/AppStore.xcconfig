@@ -1,0 +1,4 @@
+// App Store identity registered on 2026-11-04.
+// Supply explicitly with xcodebuild -xcconfig Configuration/AppStore.xcconfig.
+DEVELOPMENT_TEAM = TLAMM3823Y
+CODE_SIGN_STYLE = Automatic
